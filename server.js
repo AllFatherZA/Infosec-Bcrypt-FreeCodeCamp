@@ -16,7 +16,6 @@ bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
     /*Store hash in your db*/
     bcrypt.compare(someOtherPlaintextPassword, hash, (err, res) => {
         /*res == true or false*/
-        console.log(res);
       });
   });
 
